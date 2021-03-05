@@ -5,13 +5,11 @@ import App from "./App";
 import Root from "./root";
 import * as serviceWorker from "./serviceWorker";
 
-ReactDOM.render( <
-    Root >
-    <
-    App / >
-    <
-    /Root>,
-    document.getElementById("root")
+ReactDOM.render(
+  <Root>
+    <App />
+  </Root>,
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
