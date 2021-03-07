@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/stock-in-india/static/css/main.ac3034f4.chunk.css",
-    "main.js": "/stock-in-india/static/js/main.71ee7c49.chunk.js",
-    "main.js.map": "/stock-in-india/static/js/main.71ee7c49.chunk.js.map",
+    "main.js": "/stock-in-india/static/js/main.ad5065f5.chunk.js",
+    "main.js.map": "/stock-in-india/static/js/main.ad5065f5.chunk.js.map",
     "runtime-main.js": "/stock-in-india/static/js/runtime-main.e11bd6e6.js",
     "runtime-main.js.map": "/stock-in-india/static/js/runtime-main.e11bd6e6.js.map",
     "static/js/2.4fbd69c1.chunk.js": "/stock-in-india/static/js/2.4fbd69c1.chunk.js",
@@ -14,12 +14,13 @@
     "static/media/delete.e3a77b0c.svg": "/stock-in-india/static/media/delete.e3a77b0c.svg",
     "static/media/edit.efec3d91.svg": "/stock-in-india/static/media/edit.efec3d91.svg",
     "static/media/hamburger-menu.3a4eb8d4.svg": "/stock-in-india/static/media/hamburger-menu.3a4eb8d4.svg",
-    "static/media/search.ea2e96bc.svg": "/stock-in-india/static/media/search.ea2e96bc.svg"
+    "static/media/moving-search.94a0a908.gif": "/stock-in-india/static/media/moving-search.94a0a908.gif",
+    "static/media/search-cancel.0316144a.gif": "/stock-in-india/static/media/search-cancel.0316144a.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.e11bd6e6.js",
     "static/js/2.4fbd69c1.chunk.js",
     "static/css/main.ac3034f4.chunk.css",
-    "static/js/main.71ee7c49.chunk.js"
+    "static/js/main.ad5065f5.chunk.js"
   ]
 }
