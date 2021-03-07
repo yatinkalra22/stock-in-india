@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/yatinkalra22.github.io/stock-in-india/static/css/main.ac3034f4.chunk.css",
-    "main.js": "/yatinkalra22.github.io/stock-in-india/static/js/main.830d1fc1.chunk.js",
-    "main.js.map": "/yatinkalra22.github.io/stock-in-india/static/js/main.830d1fc1.chunk.js.map",
-    "runtime-main.js": "/yatinkalra22.github.io/stock-in-india/static/js/runtime-main.310e975f.js",
-    "runtime-main.js.map": "/yatinkalra22.github.io/stock-in-india/static/js/runtime-main.310e975f.js.map",
-    "static/js/2.daa0db26.chunk.js": "/yatinkalra22.github.io/stock-in-india/static/js/2.daa0db26.chunk.js",
-    "static/js/2.daa0db26.chunk.js.map": "/yatinkalra22.github.io/stock-in-india/static/js/2.daa0db26.chunk.js.map",
-    "index.html": "/yatinkalra22.github.io/stock-in-india/index.html",
-    "static/css/main.ac3034f4.chunk.css.map": "/yatinkalra22.github.io/stock-in-india/static/css/main.ac3034f4.chunk.css.map",
-    "static/js/2.daa0db26.chunk.js.LICENSE.txt": "/yatinkalra22.github.io/stock-in-india/static/js/2.daa0db26.chunk.js.LICENSE.txt",
-    "static/media/cancel.545735aa.svg": "/yatinkalra22.github.io/stock-in-india/static/media/cancel.545735aa.svg",
-    "static/media/delete.e3a77b0c.svg": "/yatinkalra22.github.io/stock-in-india/static/media/delete.e3a77b0c.svg",
-    "static/media/edit.efec3d91.svg": "/yatinkalra22.github.io/stock-in-india/static/media/edit.efec3d91.svg",
-    "static/media/hamburger-menu.3a4eb8d4.svg": "/yatinkalra22.github.io/stock-in-india/static/media/hamburger-menu.3a4eb8d4.svg",
-    "static/media/search.ea2e96bc.svg": "/yatinkalra22.github.io/stock-in-india/static/media/search.ea2e96bc.svg"
+    "main.css": "/stock-in-india/static/css/main.ac3034f4.chunk.css",
+    "main.js": "/stock-in-india/static/js/main.814b5d70.chunk.js",
+    "main.js.map": "/stock-in-india/static/js/main.814b5d70.chunk.js.map",
+    "runtime-main.js": "/stock-in-india/static/js/runtime-main.e11bd6e6.js",
+    "runtime-main.js.map": "/stock-in-india/static/js/runtime-main.e11bd6e6.js.map",
+    "static/js/2.a8af09a4.chunk.js": "/stock-in-india/static/js/2.a8af09a4.chunk.js",
+    "static/js/2.a8af09a4.chunk.js.map": "/stock-in-india/static/js/2.a8af09a4.chunk.js.map",
+    "index.html": "/stock-in-india/index.html",
+    "static/css/main.ac3034f4.chunk.css.map": "/stock-in-india/static/css/main.ac3034f4.chunk.css.map",
+    "static/js/2.a8af09a4.chunk.js.LICENSE.txt": "/stock-in-india/static/js/2.a8af09a4.chunk.js.LICENSE.txt",
+    "static/media/cancel.545735aa.svg": "/stock-in-india/static/media/cancel.545735aa.svg",
+    "static/media/delete.e3a77b0c.svg": "/stock-in-india/static/media/delete.e3a77b0c.svg",
+    "static/media/edit.efec3d91.svg": "/stock-in-india/static/media/edit.efec3d91.svg",
+    "static/media/hamburger-menu.3a4eb8d4.svg": "/stock-in-india/static/media/hamburger-menu.3a4eb8d4.svg",
+    "static/media/search.ea2e96bc.svg": "/stock-in-india/static/media/search.ea2e96bc.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.310e975f.js",
-    "static/js/2.daa0db26.chunk.js",
+    "static/js/runtime-main.e11bd6e6.js",
+    "static/js/2.a8af09a4.chunk.js",
     "static/css/main.ac3034f4.chunk.css",
-    "static/js/main.830d1fc1.chunk.js"
+    "static/js/main.814b5d70.chunk.js"
   ]
 }
