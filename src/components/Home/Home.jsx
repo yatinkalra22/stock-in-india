@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import HamburgerMenu from "../../assets/hamburger-menu.svg";
-import Search from "../../assets/search.svg";
+import SearchCancel from "../../assets/search-cancel.gif";
+import MovingSearch from "../../assets/moving-search.gif";
 import "./Home.css";
 import TopCryptoAsset from "../TopCryptoAsset/TopCryptoAsset";
 import WatchList from "../WatchList/WatchList";
@@ -43,7 +44,7 @@ export class NavBar extends Component {
           )}
           <img
             className="icons"
-            src={Search}
+            src={showSearchBox ? SearchCancel : MovingSearch}
             alt="SearchIcon"
             onClick={this.onSearchClick}
           />

@@ -9,7 +9,7 @@ import MetaTags from "react-meta-tags";
 ReactDOM.render(
   <Root>
     <MetaTags>
-      <title>Page 1</title>
+      <title> Stock In India</title>
       <meta property="og:title" content="Stock In India" />
       <meta
         http-equiv="Content-Security-Policy"

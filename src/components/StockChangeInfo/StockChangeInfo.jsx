@@ -2,6 +2,7 @@ import React from "react";
 import "./StockChangeInfo.css";
 // import Graph from "../../assets/graph.png";
 import DeleteButton from "../../assets/delete.svg";
+import DeleteGif from "../../assets/delete.gif";
 import history from "../../history";
 
 export default function StockChangeInfo(props) {
@@ -30,7 +31,7 @@ export default function StockChangeInfo(props) {
       {shouldDelete ? (
         <img
           className="delete-icon"
-          src={DeleteButton}
+          src={DeleteGif}
           alt="DeleteButton"
           onClick={() => deleteFromWatchList(props)}
         />
