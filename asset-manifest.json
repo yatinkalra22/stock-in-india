@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/yatinkalra22/stock-in-india/static/css/main.ac3034f4.chunk.css",
+    "main.js": "/yatinkalra22/stock-in-india/static/js/main.393d8605.chunk.js",
+    "main.js.map": "/yatinkalra22/stock-in-india/static/js/main.393d8605.chunk.js.map",
+    "runtime-main.js": "/yatinkalra22/stock-in-india/static/js/runtime-main.6a9b0767.js",
+    "runtime-main.js.map": "/yatinkalra22/stock-in-india/static/js/runtime-main.6a9b0767.js.map",
+    "static/js/2.053dba8c.chunk.js": "/yatinkalra22/stock-in-india/static/js/2.053dba8c.chunk.js",
+    "static/js/2.053dba8c.chunk.js.map": "/yatinkalra22/stock-in-india/static/js/2.053dba8c.chunk.js.map",
+    "index.html": "/yatinkalra22/stock-in-india/index.html",
+    "static/css/main.ac3034f4.chunk.css.map": "/yatinkalra22/stock-in-india/static/css/main.ac3034f4.chunk.css.map",
+    "static/js/2.053dba8c.chunk.js.LICENSE.txt": "/yatinkalra22/stock-in-india/static/js/2.053dba8c.chunk.js.LICENSE.txt",
+    "static/media/cancel.545735aa.svg": "/yatinkalra22/stock-in-india/static/media/cancel.545735aa.svg",
+    "static/media/delete.e3a77b0c.svg": "/yatinkalra22/stock-in-india/static/media/delete.e3a77b0c.svg",
+    "static/media/edit.efec3d91.svg": "/yatinkalra22/stock-in-india/static/media/edit.efec3d91.svg",
+    "static/media/hamburger-menu.3a4eb8d4.svg": "/yatinkalra22/stock-in-india/static/media/hamburger-menu.3a4eb8d4.svg",
+    "static/media/search.ea2e96bc.svg": "/yatinkalra22/stock-in-india/static/media/search.ea2e96bc.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6a9b0767.js",
+    "static/js/2.053dba8c.chunk.js",
+    "static/css/main.ac3034f4.chunk.css",
+    "static/js/main.393d8605.chunk.js"
+  ]
+}
