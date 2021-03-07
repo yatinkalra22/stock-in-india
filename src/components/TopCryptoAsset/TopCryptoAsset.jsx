@@ -41,6 +41,7 @@ export class TopCryptoAsset extends Component {
           ? stock.market_data.current_price.inr
           : 0
         : 0,
+      sequence_number: watchListStock.length + 1,
     };
     // checking if stock is already bookmarked
     if (watchListStock.some((watchStock) => watchStock.id === id)) {

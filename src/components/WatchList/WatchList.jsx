@@ -1,10 +1,39 @@
 import React, { Component } from "react";
 import "./WatchList.css";
 import { connect } from "react-redux";
+import { SortableContainer, SortableElement } from "react-sortable-hoc";
 import { deleteStockFromWatchList } from "../../actions/Stocks";
 import EditButton from "../../assets/edit.svg";
 import CancelButton from "../../assets/cancel.svg";
 import StockChangeInfo from "../StockChangeInfo/StockChangeInfo";
+
+const SortableItem = SortableElement(({ stock, index1, showStock }) =>
+  showStock(stock, index1)
+);
+
+// Declaring a constant for rendering a list for mapping of items -
+const SortableList = SortableContainer(
+  ({ watchListStock, showStock }) => {
+    return (
+      <ul style={{ paddingLeft: "0px", cursor: "grab" }}>
+        {watchListStock
+          .sort((a, b) => a.sequence_number - b.sequence_number) //sorting based on sequence number
+          .map((stock, index) => (
+            <>
+              <SortableItem
+                key={`item-${index}`}
+                index={index}
+                index1={index}
+                stock={stock}
+                showStock={showStock}
+              />
+            </>
+          ))}
+      </ul>
+    );
+  },
+  { withRef: true }
+);
 
 export class WatchList extends Component {
   state = {
@@ -19,22 +48,42 @@ export class WatchList extends Component {
     const stock = { name, id, symbol };
     this.props.deleteStockFromWatchList(stock);
   };
-  createWatchList = (markedStocks) => {
-    return markedStocks.map((stock, index) => {
-      return (
-        <StockChangeInfo
-          id={stock.id}
-          symbol={stock.symbol}
-          key={index}
-          shouldDelete={this.state.shouldEdit}
-          deleteFromWatchList={this.deleteFromWatchList}
-          percentChange={stock.percentChange}
-          priceChange={stock.priceChange}
-          currentPrice={stock.currentPrice}
-        />
-      );
-    });
+  showStock = (stock, index) => {
+    return (
+      <StockChangeInfo
+        id={stock.id}
+        symbol={stock.symbol}
+        key={index}
+        shouldDelete={this.state.shouldEdit}
+        deleteFromWatchList={this.deleteFromWatchList}
+        percentChange={stock.percentChange}
+        priceChange={stock.priceChange}
+        currentPrice={stock.currentPrice}
+      />
+    );
   };
+
+  // rearrange logic here
+  reArrange = async ({ oldIndex, newIndex }) => {
+    const { watchListStock } = this.props;
+    console.log("Only Swapping as of now");
+    const temp = watchListStock[oldIndex].sequence_number;
+    watchListStock[oldIndex].sequence_number =
+      watchListStock[newIndex].sequence_number;
+    watchListStock[newIndex].sequence_number = temp;
+  };
+  createWatchList = (watchListStock) => {
+    return (
+      <SortableList
+        id="sortableBlockList"
+        showStock={this.showStock}
+        watchListStock={watchListStock}
+        onSortEnd={this.reArrange}
+        pressDelay={250}
+      />
+    );
+  };
+
   render() {
     const { shouldEdit } = this.state;
     const { watchListStock } = this.props;

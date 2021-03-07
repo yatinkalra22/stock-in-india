@@ -13,7 +13,7 @@ export default function Graph(props) {
           labels: prices,
           datasets: [
             {
-              label: "Stock Progress",
+              label: "Stock Price Change",
               data: prices,
               fill: false,
               borderColor: "#5B83C3",
@@ -25,10 +25,14 @@ export default function Graph(props) {
         }}
         options={{
           maintainAspectRatio: false,
+
           scales: {
             xAxes: [
               {
                 gridLines: {
+                  display: false,
+                },
+                ticks: {
                   display: false,
                 },
               },
@@ -36,9 +40,10 @@ export default function Graph(props) {
             yAxes: [
               {
                 gridLines: {
-                  display: true,
-                  drawBorder: false,
-                  color: "#c4c4c4",
+                  display: false,
+                },
+                ticks: {
+                  display: false,
                 },
               },
             ],
@@ -51,6 +56,13 @@ export default function Graph(props) {
               fontColor: "#33333",
               boxWidth: 10,
               padding: 5,
+            },
+          },
+          tooltips: {
+            callbacks: {
+              label: function (tooltipItem) {
+                return tooltipItem.yLabel;
+              },
             },
           },
         }}
