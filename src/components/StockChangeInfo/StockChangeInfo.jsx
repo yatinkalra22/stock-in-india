@@ -16,7 +16,7 @@ export default function StockChangeInfo(props) {
   } = props;
 
   const redirectToStock = () => {
-    history.push(`stock/${id}`);
+    history.push(`/stock-in-india/stock/${id}`);
   };
   return (
     <div className="stock-change-info-container" id={id}>

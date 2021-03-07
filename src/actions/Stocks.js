@@ -21,21 +21,25 @@ export const getAllStocks = () => (dispatch) => {
             });
         })
         .catch((err) => {
+            dispatch(stopLoading());
             console.log(err);
         });
 };
 export const getStockDetail = (id) => (dispatch) => {
+    dispatch(startLoading());
     return axios
         .get(
             `${stock_url}/v3/coins/${id}?tickers=true&market_data=true&community_data=true&developer_data=false&sparkline=false`
         )
         .then((res) => {
+            dispatch(stopLoading());
             dispatch({
                 type: GET_STOCK_DETAIL,
                 payload: res.data,
             });
         })
         .catch((err) => {
+            dispatch(stopLoading());
             console.log(err);
         });
 };
@@ -45,18 +49,19 @@ export const getStockGraph = (id, days) => (dispatch) => {
             `${stock_url}/v3/coins/${id}/market_chart?vs_currency=inr&days=${days}`
         )
         .then((res) => {
+            dispatch(stopLoading());
             dispatch({
                 type: GET_STOCK_GRAPH,
                 payload: res.data,
             });
         })
         .catch((err) => {
+            dispatch(stopLoading());
             console.log(err);
         });
 };
 
 export const addStockToWatchList = (stock) => {
-    console.log("stock: ", stock);
     return {
         type: ADD_STOCK_TO_WATCH_LIST,
         payload: stock,

@@ -4,9 +4,18 @@ import "./index.css";
 import App from "./App";
 import Root from "./root";
 import * as serviceWorker from "./serviceWorker";
+import MetaTags from "react-meta-tags";
 
 ReactDOM.render(
   <Root>
+    <MetaTags>
+      <title>Page 1</title>
+      <meta property="og:title" content="Stock In India" />
+      <meta
+        http-equiv="Content-Security-Policy"
+        content="upgrade-insecure-requests"
+      />
+    </MetaTags>
     <App />
   </Root>,
   document.getElementById("root")

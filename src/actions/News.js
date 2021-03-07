@@ -1,7 +1,6 @@
 import { GET_STOCK_NEWS } from "./Types.js";
 import { startLoading, stopLoading } from "./Loader";
 import axios from "axios";
-
 const news_url =
     "http://newsapi.org/v2/everything?q=apple&from=2021-03-06&to=2021-03-06&sortBy=popularity&apiKey=889eca57732e49d784ab1d4cf013c3f5";
 
@@ -17,6 +16,7 @@ export const getStockNews = () => (dispatch) => {
             });
         })
         .catch((err) => {
+            dispatch(stopLoading());
             console.log(err);
         });
 };

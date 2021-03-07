@@ -10,8 +10,12 @@ function App() {
       {/* mobile screen view */}
       <div className="main-container">
         <Router history={history}>
-          <Route exact path="/" component={Home}></Route>
-          <Route exact path="/stock/:id" component={StockDetail}></Route>
+          <Route exact path="/stock-in-india" component={Home}></Route>
+          <Route
+            exact
+            path="/stock-in-india/stock/:id"
+            component={StockDetail}
+          ></Route>
         </Router>
       </div>
     </div>

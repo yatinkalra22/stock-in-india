@@ -15,7 +15,6 @@ const initialState = {
 };
 
 const StockReducer = function(state = initialState, action) {
-    console.log("action: ", action);
     switch (action.type) {
         case GET_ALL_STOCKS:
             return {...state, stockList: action.payload };

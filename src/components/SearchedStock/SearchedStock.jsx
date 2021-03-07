@@ -6,7 +6,7 @@ import history from "../../history";
 
 export default class SearchedStock extends Component {
   redirectToStock = () => {
-    history.push(`stock/${this.props.id}`);
+    history.push(`/stock-in-india/stock/${this.props.id}`);
   };
   render() {
     const { symbol, id, handleBookMarkClick, isBookMarked } = this.props;

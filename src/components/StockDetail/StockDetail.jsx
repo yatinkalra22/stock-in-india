@@ -59,7 +59,6 @@ export class StockDetail extends Component {
   render() {
     const { graphDate, selectedDate } = this.state;
     const { stockNews, stock, stockGraph, isLoading } = this.props;
-    console.log("this.props: ", this.props);
     return (
       <div className="stock-detail-container">
         {/* showing loader when fetching the stock list */}
