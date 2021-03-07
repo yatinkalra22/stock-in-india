@@ -1,0 +1,33 @@
+.top-crypto-asset-container .title {
+    font-weight: 700;
+}
+
+.top-crypto-asset-container .top-crypto-list {
+    margin: 10px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    height: 75vh;
+    overflow-y: scroll;
+    padding-right: 17px;
+    box-sizing: content-box;
+}
+
+.top-crypto-asset-container .loader-position {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-crypto-asset-container .no-stock-found {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 0;
+    font-weight: 600;
+}
+
+.top-crypto-asset-container .top-crypto-list::-webkit-scrollbar {
+    display: none;
+}

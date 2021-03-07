@@ -1,4 +1,6 @@
 import { combineReducers } from "redux";
-import defaultReducer from "./DefaultReducer";
+import stockReducer from "./StockReducer";
+import newsReducer from "./NewsReducer";
+import loadingReducer from "./LoadingReducer";
 
-export default combineReducers({ defaultReducer });
+export default combineReducers({ stockReducer, loadingReducer, newsReducer });

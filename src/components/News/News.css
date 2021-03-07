@@ -1,0 +1,25 @@
+.news-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    height: fit-content;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+}
+
+.news-detail .headline {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.news-detail .content {
+    font-size: 0.8rem;
+}
+
+.news-detail .news-icons {
+    height: auto;
+    width: 80px;
+}

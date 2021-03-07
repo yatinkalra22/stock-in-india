@@ -1,0 +1,104 @@
+.info-record {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.info-record .name-detail {
+    display: flex;
+    align-items: center;
+}
+
+.info-record .name {
+    font-weight: 700;
+}
+
+.info-record .bookmark-icons {
+    height: 20px;
+    margin: 0 0 0 5px;
+}
+
+.info-record .price-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-record .price-detail .price {
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.stock-detail-container .loader-position {
+    padding: 250px 150px;
+}
+
+.stock-detail-container .graph {
+    height: 200px;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.stock-detail-container .graph-input {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.stock-detail-container .graph-input .duration-selected,
+.stock-detail-container .graph-input .duration-not-selected {
+    padding: 5px;
+    width: 40px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    background-color: var(--primaryColor);
+    box-shadow: -5px 0 10px #bdb4b4;
+}
+
+.stock-detail-container .graph-input .duration-selected {
+    color: #fff;
+    background-color: var(--primaryColor);
+}
+
+.stock-detail-container .graph-input .duration-not-selected {
+    color: #000;
+    background-color: #fff;
+}
+
+.stock-detail-container .news-section {
+    padding: 20px 10px 5px 10px;
+    height: fit-content;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    height: fit-content;
+    overflow-y: scroll;
+}
+
+.stock-detail-container .news-section .title {
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.stock-detail-container .news-list {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    height: 35vh;
+    overflow-y: scroll;
+    box-sizing: content-box;
+}
+
+.stock-detail-container .news-list .no-news-found {
+    text-align: center;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.stock-detail-container .news-list::-webkit-scrollbar {
+    display: none;
+}
