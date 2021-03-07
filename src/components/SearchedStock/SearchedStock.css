@@ -1,0 +1,17 @@
+.searched-stock-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px dotted black;
+}
+
+.searched-stock-container .stock-name,
+.searched-stock-container .bookmark-icon {
+    cursor: pointer;
+}
+
+.searched-stock-container .bookmark-icon {
+    height: 20px;
+}

@@ -1,0 +1,16 @@
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.home-container .search-input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.home-container .icons {
+    height: auto;
+    width: 40px;
+}
