@@ -1,7 +1,6 @@
 import React from "react";
 import "./StockChangeInfo.css";
 // import Graph from "../../assets/graph.png";
-import DeleteButton from "../../assets/delete.svg";
 import DeleteGif from "../../assets/delete.gif";
 import history from "../../history";
 
